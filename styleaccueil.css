@@ -1,0 +1,184 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+body{
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230617/pngtree-lakescape-landscape-nature-scenery-hd-image_2950137.jpg);
+  height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+    font: 12px Arial;
+    background-color: rgb(224, 195, 158);
+}
+.VOYAGEONS{
+    display: block;
+    padding: 55px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    color: beige;
+    text-shadow: 0 0 4px , 0 0 5px brown;
+    position: relative;
+    
+}
+#explore{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 40px; 
+ width: 100%;
+}
+.title{
+  text-transform: capitalize;
+  margin: 70px 0;
+  font-weight: bolder;
+  color: rgba(232, 121, 121, 0.578);
+  position: relative;
+  margin-left: 15px;
+  font-size: 4.5vw;
+}
+.title::after{
+  position: absolute;
+  left:-15px;
+  content: "";
+  height: 100%;
+  background-color: brown; 
+  width: 5px;
+}
+.espace{
+  padding: 40px;
+}
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+
+}
+.img .left{
+  position: relative;
+  margin-left: 10px;
+  height: 250px;
+}
+.img .left video{
+width: 160%;
+height: 100%;
+position: relative;
+box-shadow: 0 0 10px brown;
+}
+.img .left::after{
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  content: "";
+  height: 100px;
+  background-color: brown;
+  width: 100%;
+  z-index: -1;
+}
+
+.right{
+  display: flex;
+  margin-top: 0.1%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  color:beige ;
+  text-shadow: 0 0 4px , 0 0 5px brown;
+  position: relative;
+  animation: LightHover 1s infinite ease-out;
+  transition: color 2s ease-out, word-spacing 2s ease-out, letter-spacing 1s ease-out;
+
+}
+.go{
+  margin-left: 5%;
+  padding-left: 10%;
+  padding: 50px;
+  font-size: 10vw;
+}
+@keyframes Hover{
+  50% {transform:translateY(-2px)}
+}
+#Discover {
+  display: inline-block;
+  margin-top: 1%;
+  margin-left: 85%;
+  width: 13vw;
+  height: 2.5vw;
+  background-color: #292929;
+  border-radius: 10px;
+  border-style: none;
+  font-family: Helvetica;
+  font-size: 1.35vw; 
+  color:  rgb(228, 228, 178);
+}
+#Discover:hover {
+  border-radius: 10px;
+  background-color: #292929;
+  animation: Hover 1.5s infinite ease-out;
+}
+#Discover:active {
+  background-color: #404040;
+  animation: Pulse 0.5s 1;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  margin-left: 26%;
+  }
+  header ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 0 30px;
+  }
+  header ul li:last-child{
+      margin-right: 0;
+  }
+  header ul li a{
+      text-decoration: none;
+      padding: 10px;
+      background-color: rgba(232, 121, 121, 0.578);
+      display: block;
+      color: white;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 15px;
+  
+  }
+  header ul li a:hover{
+      color: white;
+  }
+  header ul .submenu{
+      position: absolute;
+  
+  }
+  header ul .submenu{
+      position: absolute;
+      width: 200px;
+      background-color:rgb(247, 247, 203) ;
+      box-shadow: 0 20px 45px black;
+      margin-top: -50px;
+      opacity: 0;
+      z-index: -999;
+      transition: all ease 0.5s;
+      padding: 5px;
+      
+  }
+  header ul li:hover .submenu{
+      z-index: 99;
+      opacity: 1;
+      margin-top: 0;
+  }

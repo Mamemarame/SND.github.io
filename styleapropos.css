@@ -1,0 +1,205 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+} 
+*,::before,::after{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding:20px 15px 0;
+}
+
+body{
+  background-repeat: no-repeat;
+  backdrop-filter: blur(4px);
+    background-image: url(https://i.pinimg.com/474x/b7/7b/33/b77b331d3264ec77dca39906108537ae.jpg);
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container{
+  background: linear-gradient(135deg,rgba(bisque),rgba(bisque));
+  width: 90%;
+  height: 350px;
+  margin:100px;
+  padding: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0 32px 32px rgba(152, 7, 7, 0.849);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid bisque;
+  line-height: 3.6;
+  
+
+}
+.container H1{
+  color: rgba(152, 7, 7, 0.849);
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+.container p{
+  display: block;
+  line-height: 2.4;
+  font-weight: bold;
+  border-radius:30px ;
+  color: bisque;
+  margin-bottom: 1px;
+  font-size: 18px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgb(151, 14, 7);
+  box-shadow:5px 5px 15px rgba(152, 7, 7, 0.849);
+
+}
+.container::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.container h1{
+  margin-bottom: 15px;
+  size: 30px;
+  border-radius: 20px;
+}
+ 
+.content{
+  width: 90%;
+  height: 350px;
+  margin: 100px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 32px 15px rgba(152, 7, 7, 0.849);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgb(244, 172, 192);
+
+}
+
+.content::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.content h1{
+  margin-bottom: 15px;
+  size: 40px;
+  color: rgba(152, 7, 7, 0.849);
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+ 
+.content p{
+  line-height: 3.4;
+  font-weight: bold;
+  border-radius:30px ;
+  color:bisque;
+  font-size:20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgb(151, 14, 7);
+  box-shadow: 5px 5px 15px rgba(152, 7, 7, 0.849);
+  
+
+}
+img{
+  width: 500px;
+  height: 10px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 50px;
+  float: left;
+  shape-outside: margin-box;
+  margin: 0 auto;
+  box-shadow: none;
+  background-repeat: no-repeat;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  margin-left: 26%;
+  }
+  header ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 0 30px;
+  }
+  header ul li:last-child{
+      margin-right: 0;
+  }
+  header ul li a{
+      text-decoration: none;
+      padding: 10px;
+      background-color: rgba(232, 121, 121, 0.578);
+      display: block;
+      color: white;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 15px;
+  
+  }
+
+  header ul li a:hover{
+      color: white;
+  }
+  header ul .submenu{
+      position: absolute;
+  
+  }
+  header ul .submenu{
+      position: absolute;
+      width: 200px;
+      background-color:rgb(247, 247, 203) ;
+      box-shadow: 0 20px 45px black;
+      margin-top: -50px;
+      opacity: 0;
+      z-index: -999;
+      transition: all ease 0.5s;
+      padding: 5px;
+      
+  }
+  header ul li:hover .submenu{
+      z-index: 99;
+      opacity: 1;
+      margin-top: 0;
+  }
+.go{
+  margin-left: 5%;
+  padding-left: 10%;
+  padding: 50px;
+  font-size: 10vw;
+  margin-top: 2%;
+}
+@keyframes Hover{
+  50% {transform:translateY(-2px)}
+}
+#Discover {
+  display: inline-block;
+  margin-left: 85%;
+  width: 13vw;
+  height: 2.5vw;
+  background-color: #292929;
+  border-radius: 10px;
+  border-style: none;
+  font-family: Helvetica;
+  font-size: 1.35vw; 
+  color:  rgb(228, 228, 178);
+}
+#Discover:hover {
+  border-radius: 10px;
+  background-color: #292929;
+  animation: Hover 1.5s infinite ease-out;
+}
+#Discover:active {
+  background-color: #404040;
+  animation: Pulse 0.5s 1;
+}
